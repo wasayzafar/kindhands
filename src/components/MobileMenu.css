@@ -6,8 +6,8 @@
   right: 0;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.5);
-  z-index: var(--z-modal-backdrop);
-  animation: fadeIn var(--transition-base);
+  z-index: 9999;
+  animation: fadeIn 0.3s ease;
 }
 
 @keyframes fadeIn {
@@ -22,20 +22,44 @@
 /* Mobile Menu */
 .mobile-menu {
   position: fixed;
-  top: 0;
-  right: -100%;
-  width: 80%;
-  max-width: 300px;
-  height: 100vh;
-  background-color: var(--color-background);
-  box-shadow: var(--shadow-lg);
-  z-index: var(--z-modal);
-  transition: right var(--transition-slow);
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 400px;
+  max-height: 70vh;
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  z-index: 10000;
   overflow-y: auto;
+  border: 2px solid #0077b5;
+  display: none;
 }
 
 .mobile-menu--open {
-  right: 0;
+  display: block;
+}
+
+.mobile-menu__header {
+  display: flex;
+  justify-content: flex-end;
+  padding: 16px 20px 0 20px;
+}
+
+.mobile-menu__close {
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: #0077b5;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.mobile-menu__close:hover {
+  background-color: rgba(0, 119, 181, 0.1);
 }
 
 .mobile-menu__list {
@@ -137,10 +161,4 @@
   outline-offset: -2px;
 }
 
-/* Hide mobile menu on larger screens */
-@media (min-width: 768px) {
-  .mobile-menu,
-  .mobile-menu-backdrop {
-    display: none;
-  }
-}
+

@@ -38,6 +38,7 @@ const Header = () => {
     { path: '/insurances', label: 'Insurances' },
     { path: '/programs', label: 'Programs' },
     { path: '/contact', label: 'Contact Us' },
+    { path: '/send-referral', label: 'Send Referral' }
      ]
 
   const toggleMobileMenu = () => {

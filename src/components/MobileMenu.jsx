@@ -7,10 +7,10 @@ const MobileMenu = ({ isOpen, onClose, menuItems }) => {
   const [expandedItem, setExpandedItem] = useState(null)
 
   // Close menu on route change
-  useEffect(() => {
-    onClose()
-    setExpandedItem(null)
-  }, [location, onClose])
+  // useEffect(() => {
+  //   onClose()
+  //   setExpandedItem(null)
+  // }, [location, onClose])
 
   // Close menu on Escape key
   useEffect(() => {
@@ -52,6 +52,15 @@ const MobileMenu = ({ isOpen, onClose, menuItems }) => {
         aria-label="Mobile navigation"
         aria-hidden={!isOpen}
       >
+        <div className="mobile-menu__header">
+          <button 
+            className="mobile-menu__close"
+            onClick={onClose}
+            aria-label="Close menu"
+          >
+            ✕
+          </button>
+        </div>
         <ul className="mobile-menu__list">
           {menuItems.map((item, index) => (
             <li key={index} className="mobile-menu__item">

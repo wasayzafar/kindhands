@@ -17,8 +17,8 @@
     transition: transform 0.3s;
 }
 .hero{
-    padding-top: 10rem;
-    height: min-content;
+    padding-top: 2rem;
+    height: max-content;
    background: #eaf7ff;
    padding-bottom: 2rem;
 }

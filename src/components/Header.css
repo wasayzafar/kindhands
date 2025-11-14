@@ -181,7 +181,7 @@ background: linear-gradient(135deg, #ff6b6b, #ee5a24);
   list-style: none;
   margin: var(--spacing-md) 0 0 0;
   padding: 1rem;
-  min-width: min-content;
+  width: min-content;
   z-index: var(--z-dropdown);
   animation: dropdownSlide var(--transition-fast);
   display: grid;
@@ -289,16 +289,23 @@ background: linear-gradient(135deg, #ff6b6b, #ee5a24);
 
 /* Mobile Menu Button */
 .mobile-menu-button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: transparent;
-  border: none;
-  padding: var(--spacing-sm);
+  display: block !important;
+  background: rgba(0, 119, 181, 0.1);
+  border: 2px solid var(--color-primary);
+  padding: 8px;
   cursor: pointer;
-  min-width: var(--touch-target-min);
-  min-height: var(--touch-target-min);
+  min-width: 44px;
+  min-height: 44px;
   color: var(--color-primary);
+  position: relative;
+  z-index: 9999;
+  border-radius: 4px;
+}
+
+@media (max-width: 767px) {
+  .nav {
+    display: none;
+  }
 }
 
 .mobile-menu-button:hover {
