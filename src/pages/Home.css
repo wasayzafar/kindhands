@@ -18,8 +18,9 @@
 }
 .hero{
     padding-top: 10rem;
-    height: 100vh;
+    height: min-content;
    background: #eaf7ff;
+   padding-bottom: 2rem;
 }
 
 /* Services Section */
