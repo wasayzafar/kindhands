@@ -289,7 +289,7 @@ background: linear-gradient(135deg, #ff6b6b, #ee5a24);
 
 /* Mobile Menu Button */
 .mobile-menu-button {
-  display: block !important;
+  display: none;
   background: rgba(0, 119, 181, 0.1);
   border: 2px solid var(--color-primary);
   padding: 8px;
@@ -305,6 +305,10 @@ background: linear-gradient(135deg, #ff6b6b, #ee5a24);
 @media (max-width: 767px) {
   .nav {
     display: none;
+  }
+  
+  .mobile-menu-button {
+    display: block;
   }
 }
 
