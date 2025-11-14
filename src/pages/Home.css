@@ -231,6 +231,10 @@ color: #0077b5;
     text-align: center;
   }
   
+  .hero-text {
+    text-align: center;
+  }
+  
   .hero-text h1 {
     font-size: 2.5rem;
   }
@@ -242,6 +246,17 @@ color: #0077b5;
   .hero-image-photo {
     height: 40vh;
     transform: none;
+  }
+  
+  .cta-buttons {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .btn-primary {
+    margin: 0 auto;
+    display: block;
   }
   
   .social-links {

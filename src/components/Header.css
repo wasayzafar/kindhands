@@ -291,7 +291,7 @@ background: linear-gradient(135deg, #ff6b6b, #ee5a24);
 .mobile-menu-button {
   display: none;
   background: rgba(0, 119, 181, 0.1);
-  border: 2px solid var(--color-primary);
+  border: none;
   padding: 8px;
   cursor: pointer;
   min-width: 44px;
