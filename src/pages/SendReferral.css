@@ -1,0 +1,224 @@
+/* Send Referral Page */
+.send-referral {
+  padding-top: 0;
+  margin-top: -120px;
+}
+
+.hero-banner {
+  padding-top: 10rem;
+  height: 50vh;
+  background: linear-gradient(135deg, #eaf7ff 0%, #d1ecf1 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-content h1 {
+  color: #0088cc;
+  font-size: 4rem;
+  font-weight: 800;
+  margin-bottom: var(--spacing-md);
+}
+
+.hero-content p {
+  color: #0088cc;
+  font-size: var(--font-size-xl);
+  font-weight: 500;
+}
+
+.form-content {
+  padding: var(--spacing-3xl) 0;
+  background: white;
+}
+
+.form-container {
+  max-width: 900px;
+  margin: 10rem auto;
+  padding: 0 var(--container-padding);
+}
+
+/* Success Message */
+.success-message {
+  background-color: rgba(40, 167, 69, 0.1);
+  border: 2px solid var(--color-success);
+  color: var(--color-success);
+  padding: var(--spacing-lg);
+  border-radius: 8px;
+  margin-bottom: var(--spacing-xl);
+  text-align: center;
+  font-size: var(--font-size-lg);
+  animation: slideDown var(--transition-base);
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.success-message strong {
+  display: block;
+  margin-bottom: var(--spacing-sm);
+  font-size: var(--font-size-xl);
+}
+
+/* Referral Form */
+.referral-form {
+  background: white;
+  padding: var(--spacing-3xl);
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Form Sections */
+.form-section {
+  margin-bottom: var(--spacing-2xl);
+}
+
+.form-section:last-of-type {
+  margin-bottom: var(--spacing-xl);
+}
+
+.form-section h3 {
+  color: var(--color-primary);
+  border-bottom: 2px solid var(--color-primary);
+  padding-bottom: var(--spacing-sm);
+  margin-bottom: var(--spacing-xl);
+  font-size: var(--font-size-xl);
+}
+
+/* Form Rows - Mobile First */
+.form-row {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+/* Form Group (for select dropdown) */
+.form-group {
+  margin-bottom: var(--spacing-lg);
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: var(--spacing-sm);
+  font-weight: 600;
+  color: var(--color-text-primary);
+  font-size: var(--font-size-base);
+}
+
+.required-indicator {
+  color: var(--color-error);
+  margin-left: 2px;
+}
+
+.form-group select {
+  width: 100%;
+  padding: var(--spacing-md);
+  border: 2px solid var(--color-border);
+  border-radius: 4px;
+  font-size: var(--font-size-base);
+  font-family: inherit;
+  color: var(--color-text-primary);
+  background-color: var(--color-background);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  min-height: var(--touch-target-min);
+}
+
+.form-group select:focus {
+  outline: none;
+  border-color: var(--color-border-focus);
+  box-shadow: 0 0 0 3px rgba(74, 111, 165, 0.1);
+}
+
+.form-group select:focus-visible {
+  outline: 2px solid var(--color-border-focus);
+  outline-offset: 2px;
+}
+
+/* Form Actions */
+.form-actions {
+  margin-top: var(--spacing-2xl);
+  padding-top: var(--spacing-xl);
+  border-top: 1px solid var(--color-border);
+}
+
+/* Submit Button */
+.submit-btn {
+  background-color: var(--color-primary);
+  color: var(--color-text-light);
+  border: none;
+  padding: var(--spacing-lg) var(--spacing-2xl);
+  font-size: var(--font-size-lg);
+  border-radius: 8px;
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  font-weight: 600;
+  transition: all var(--transition-base);
+  min-height: var(--touch-target-min);
+}
+
+.submit-btn:hover:not(:disabled) {
+  background-color: var(--color-primary-dark);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.submit-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.submit-btn:focus-visible {
+  outline: 2px solid var(--color-border-focus);
+  outline-offset: 4px;
+}
+
+/* Tablet Styles (768px+) */
+@media (max-width: 767px) {
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+  
+  .form-row {
+    flex-direction: column;
+  }
+  
+  .referral-form {
+    padding: var(--spacing-xl);
+  }
+}
+
+@media (min-width: 768px) {
+  .form-row {
+    flex-direction: row;
+    gap: var(--spacing-xl);
+  }
+
+  .form-row > * {
+    flex: 1;
+  }
+
+  .submit-btn {
+    width: auto;
+    min-width: 250px;
+    margin: 0 auto;
+  }
+}
+
+/* Desktop Styles (1024px+) */
+@media (min-width: 1024px) {
+  .form-section h3 {
+    font-size: var(--font-size-2xl);
+  }
+}

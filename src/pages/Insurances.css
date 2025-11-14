@@ -1,0 +1,277 @@
+.insurances-page {
+  padding-top: 0;
+  margin-top: -120px;
+}
+
+
+
+.hero-content h1 {
+  color: #0088cc;
+  font-size: 4rem;
+  font-weight: 800;
+  margin-bottom: var(--spacing-md);
+}
+
+.hero-content p {
+  color: #0088cc;
+  font-size: var(--font-size-xl);
+  font-weight: 500;
+}
+
+.insurance-plans {
+  padding: var(--spacing-3xl) 0;
+  background: white;
+}
+
+.insurance-container {
+  max-width: var(--container-max-width);
+  margin-top: 10rem;
+  margin: 10rem auto;
+  padding: 0 var(--container-padding);
+  text-align: center;
+}
+
+.insurance-container h2 {
+  color: var(--color-primary);
+  font-size: var(--font-size-3xl);
+  margin-bottom: var(--spacing-lg);
+}
+
+.section-subtitle {
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-lg);
+  line-height: 1.6;
+  margin-bottom: var(--spacing-2xl);
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.insurance-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--spacing-xl);
+}
+
+.insurance-card {
+  background: var(--color-background-alt);
+  padding: var(--spacing-xl);
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  transition: transform var(--transition-base);
+  text-align: center;
+}
+
+.insurance-card:hover {
+  transform: translateY(-8px);
+}
+
+.insurance-icon {
+  font-size: 3rem;
+  margin-bottom: var(--spacing-lg);
+}
+
+.insurance-card h3 {
+  color: var(--color-primary);
+  font-size: var(--font-size-lg);
+  margin-bottom: var(--spacing-md);
+}
+
+.insurance-card p {
+  color: var(--color-text-secondary);
+  line-height: 1.5;
+  font-size: var(--font-size-sm);
+}
+
+.payment-options {
+  padding: var(--spacing-3xl) 0;
+  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+}
+
+.payment-container {
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+  padding: 0 var(--container-padding);
+  text-align: center;
+}
+
+.payment-container h2 {
+  color: var(--color-primary);
+  font-size: var(--font-size-3xl);
+  margin-bottom: var(--spacing-2xl);
+}
+
+.payment-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--spacing-xl);
+}
+
+.payment-card {
+  background: white;
+  padding: var(--spacing-2xl);
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  border-left: 4px solid var(--color-primary);
+  transition: transform var(--transition-base);
+  text-align: left;
+}
+
+.payment-card:hover {
+  transform: translateY(-4px);
+}
+
+.payment-card h3 {
+  color: var(--color-primary);
+  font-size: var(--font-size-xl);
+  margin-bottom: var(--spacing-md);
+}
+
+.payment-card p {
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+}
+
+.verification-process {
+  padding: var(--spacing-3xl) 0;
+  background: white;
+}
+
+.verification-container {
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+  padding: 0 var(--container-padding);
+}
+
+.verification-content h2 {
+  color: var(--color-primary);
+  font-size: var(--font-size-3xl);
+  text-align: center;
+  margin-bottom: var(--spacing-2xl);
+}
+
+.process-steps {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--spacing-xl);
+}
+
+.step {
+  text-align: center;
+  padding: var(--spacing-xl);
+}
+
+.step-number {
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, #ff6b6b, #ee5a24);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--font-size-xl);
+  font-weight: 700;
+  margin: 0 auto var(--spacing-lg) auto;
+}
+
+.step h3 {
+  color: var(--color-primary);
+  font-size: var(--font-size-lg);
+  margin-bottom: var(--spacing-md);
+}
+
+.step p {
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+}
+
+.contact-billing {
+  padding: var(--spacing-3xl) 0;
+  background: var(--color-primary);
+  text-align: center;
+}
+
+.billing-container h2 {
+  color: white;
+  font-size: var(--font-size-3xl);
+  margin-bottom: var(--spacing-md);
+}
+
+.billing-container p {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: var(--font-size-lg);
+  margin-bottom: var(--spacing-xl);
+}
+
+.billing-contact {
+  display: flex;
+  justify-content: center;
+  gap: var(--spacing-2xl);
+  margin-bottom: var(--spacing-xl);
+}
+
+.contact-item {
+  color: white;
+  font-size: var(--font-size-lg);
+}
+
+.contact-item a {
+  color: rgba(255, 255, 255, 0.9);
+  text-decoration: none;
+}
+
+.contact-item a:hover {
+  text-decoration: underline;
+}
+
+.contact-btn {
+  display: inline-block;
+  background: linear-gradient(135deg, #ff6b6b, #ee5a24);
+  color: white;
+  padding: var(--spacing-lg) var(--spacing-2xl);
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: var(--font-size-lg);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: transform var(--transition-base);
+}
+
+.contact-btn:hover {
+  transform: translateY(-2px);
+}
+
+@media (max-width: 1024px) {
+  .insurance-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .process-steps {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+  
+  .insurance-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .payment-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .process-steps {
+    grid-template-columns: 1fr;
+  }
+  
+  .billing-contact {
+    flex-direction: column;
+    gap: var(--spacing-md);
+  }
+}
