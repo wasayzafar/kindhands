@@ -13,25 +13,80 @@ const Header = () => {
     { 
       label: 'Services',
       dropdown: [
+        // { 
+        //   path: '/home-health-care', 
+        //   label: 'Home Health Care',
+        //   description: 'Skilled nursing, physical therapy, and rehabilitative services provided at home to help patients recover after illness, surgery, or hospitalization.'
+        // },
+        // { 
+        //   path: '/private-duty', 
+        //   label: 'Home Care – Private Duty',
+        //   description: 'Personalized, non-medical assistance with daily activities to support independence and comfort at home—available to all ages and often privately paid.'
+        // },
+        // { 
+        //   path: '/home-maker-ccp', 
+        //   label: 'Home Care – Home Maker / CCP',
+        //   description: 'State-funded in-home services for seniors through Illinois\' Community Care Program, helping adults that are 60+ to remain safely in their homes.'
+        // },
+        // { 
+        //   path: '/hospice-palliative', 
+        //   label: 'Hospice & Palliative Care',
+        //   description: 'Compassionate care focused on comfort, dignity, and symptom relief for those with serious or life-limiting illnesses—supporting both patients and families.'
+        // },
         { 
-          path: '/home-health-care', 
-          label: 'Home Health Care',
-          description: 'Skilled nursing, physical therapy, and rehabilitative services provided at home to help patients recover after illness, surgery, or hospitalization.'
+          path: '/physical-therapy', 
+          label: 'Physical Therapy',
+          description: 'Restore movement and function through therapeutic exercises and treatments.'
         },
         { 
-          path: '/private-duty', 
-          label: 'Home Care – Private Duty',
-          description: 'Personalized, non-medical assistance with daily activities to support independence and comfort at home—available to all ages and often privately paid.'
+          path: '/occupational-therapy', 
+          label: 'Occupational Therapy',
+          description: 'Help patients regain independence in daily living activities.'
         },
         { 
-          path: '/home-maker-ccp', 
-          label: 'Home Care – Home Maker / CCP',
-          description: 'State-funded in-home services for seniors through Illinois\' Community Care Program, helping adults that are 60+ to remain safely in their homes.'
+          path: '/speech-therapy', 
+          label: 'Speech Therapy',
+          description: 'Improve communication and swallowing abilities.'
         },
         { 
-          path: '/hospice-palliative', 
-          label: 'Hospice & Palliative Care',
-          description: 'Compassionate care focused on comfort, dignity, and symptom relief for those with serious or life-limiting illnesses—supporting both patients and families.'
+          path: '/skilled-nursing', 
+          label: 'Skilled Nursing',
+          description: 'Professional nursing care for complex medical needs.'
+        },
+        { 
+          path: '/home-health-aides', 
+          label: 'Home Health Aides',
+          description: 'Personal care assistance with daily activities.'
+        },
+        { 
+          path: '/medical-social-service', 
+          label: 'Medical Social Service',
+          description: 'Support services to address social and emotional needs.'
+        },
+        { 
+          path: '/dietitians', 
+          label: 'Dietitians',
+          description: 'Nutritional counseling and meal planning services.'
+        },
+        { 
+          path: '/hospice-care', 
+          label: 'Hospice Care',
+          description: 'End-of-life care focused on comfort and dignity.'
+        },
+        { 
+          path: '/wound-care', 
+          label: 'Wound Care',
+          description: 'Specialized treatment for wound healing and management.'
+        },
+        { 
+          path: '/diabetes-management', 
+          label: 'Diabetes Management',
+          description: 'Comprehensive care for diabetes monitoring and education.'
+        },
+        { 
+          path: '/ostomy-care', 
+          label: 'Ostomy Care',
+          description: 'Specialized care and education for ostomy patients.'
         }
       ]
     },
@@ -96,13 +151,8 @@ const Header = () => {
                             <Link to={subItem.path} role="menuitem">
                               {subItem.label}
                             </Link>
-                            {subItem.description && (
-                              <p className="dropdown-description">{subItem.description}</p>
-                            )}
                           </li>
-                         
                         ))}
-                        
                       </ul>
                     )}
                   </>

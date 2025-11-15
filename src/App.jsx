@@ -17,6 +17,17 @@ import HomeHealthCare from './pages/HomeHealthCare'
 import PrivateDuty from './pages/PrivateDuty'
 import HomeMakerCCP from './pages/HomeMakerCCP'
 import HospicePalliative from './pages/HospicePalliative'
+import PhysicalTherapy from './pages/PhysicalTherapy'
+import OccupationalTherapy from './pages/OccupationalTherapy'
+import SpeechTherapy from './pages/SpeechTherapy'
+import SkilledNursing from './pages/SkilledNursing'
+import HomeHealthAides from './pages/HomeHealthAides'
+import MedicalSocialService from './pages/MedicalSocialService'
+import Dietitians from './pages/Dietitians'
+import HospiceCare from './pages/HospiceCare'
+import WoundCare from './pages/WoundCare'
+import DiabetesManagement from './pages/DiabetesManagement'
+import OstomyCare from './pages/OstomyCare'
 import './App.css'
 
 function App() {
@@ -47,6 +58,17 @@ function App() {
             <Route path="/private-duty" element={<PrivateDuty />} />
             <Route path="/home-maker-ccp" element={<HomeMakerCCP />} />
             <Route path="/hospice-palliative" element={<HospicePalliative />} />
+            <Route path="/physical-therapy" element={<PhysicalTherapy />} />
+            <Route path="/occupational-therapy" element={<OccupationalTherapy />} />
+            <Route path="/speech-therapy" element={<SpeechTherapy />} />
+            <Route path="/skilled-nursing" element={<SkilledNursing />} />
+            <Route path="/home-health-aides" element={<HomeHealthAides />} />
+            <Route path="/medical-social-service" element={<MedicalSocialService />} />
+            <Route path="/dietitians" element={<Dietitians />} />
+            <Route path="/hospice-care" element={<HospiceCare />} />
+            <Route path="/wound-care" element={<WoundCare />} />
+            <Route path="/diabetes-management" element={<DiabetesManagement />} />
+            <Route path="/ostomy-care" element={<OstomyCare />} />
           </Routes>
         </main>
         
